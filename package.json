@@ -9,7 +9,7 @@
   "keywords": [
     "Blog"
   ],
-  "author": "Vaibhav Sinha",
+  "author": "Shubham Kumar Jha",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^3.0.5",

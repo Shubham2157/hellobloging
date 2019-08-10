@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Mon Sep 12 2016 06:43:49 GMT+0000 (UTC) -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>BLOG EXPRESS</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="Webflow" name="generator">
+    <link href="https://daks2k3a4ib2z.cloudfront.net/56cf6e77d3b4fc4579d0a954/css/denali-template.webflow.62e4e3112.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+    <script type="text/javascript">
+        WebFont.load({
+            google: {
+                families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic"]
+            }
+        });
+    </script>
+    <script src="https://daks2k3a4ib2z.cloudfront.net/0globals/modernizr-2.7.1.js" type="text/javascript"></script>
+
+    <!-- <link href="https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png" rel="apple-touch-icon"> -->
+</head>
+
+<body>
+    <div class="navigation-bar w-nav" data-animation="default" data-collapse="medium" data-contain="1" data-duration="400">
+        <div class="w-container">
+            <a class="w-nav-brand" href="/">
+                <div class="site-name">BLOG EXPRESS</div>
+            </a>
+            <nav class="navigation-menu w-nav-menu" role="navigation">
+                <a class="navigation-link w-nav-link" href="/">Home</a>
+                <a class="navigation-link w-nav-link" href="/about">About</a>
+                @if(!auth)
+                <a class="navigation-link w-nav-link" href="/auth/login">LogIn</a>
+                <a class="navigation-link w-nav-link" href="/auth/register">Register</a>
+                @else
+                <a class="navigation-link w-nav-link" href="/posts/new">Create Post</a>
+                <a class="navigation-link w-nav-link" href="/auth/logout">LogOut</a>
+                @endif
+                <a class="navigation-link w-nav-link" href="/contact">Contact</a>
+            </nav>
+            <div class="menu-button w-nav-button">
+                <div class="w-icon-nav-menu"></div>
+            </div>
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <div class="w-container">
+            <div class="w-row">
+                <div class="w-col w-col-3 w-hidden-small w-hidden-tiny">
+                    <div class="white-wrapper">
+                        <img style="border-radius: 50%;" src="https://cdn.pixabay.com/photo/2014/05/02/21/49/home-office-336373_1280.jpg" srcset="https://cdn.pixabay.com/photo/2014/05/02/21/49/home-office-336373_1280.jpg 500w, https://cdn.pixabay.com/photo/2014/05/02/21/49/home-office-336373_1280.jpg 700w">
+                        <br /><br />
+                        <p class="site-description">BLOG EXPRESS is an all-purpose blogging platform. Create an account to easily add new posts and read various other posts on the website.</p>
+                       <br>
+                        <div class="feature-posts-list w-dyn-list">
+                            <div class="w-dyn-items">
+                               
+                               
+                            </div>
+                        </div>
+                        <div class="grey-rule"></div>
+                        <div class="social-link-group">
+                            <a target="_blank" class="social-icon-link w-inline-block" href="https://www.facebook.com/subham.kishan.12"><img src="http://uploads.webflow.com/56cf6e77d3b4fc4579d0a954/56cf6e77d3b4fc4579d0a99b_social-03.svg" width="25"></a>
+                            <a target="_blank" class="social-icon-link w-inline-block" href="https://www.instagram.com/kumarjhashubham0000/"><img src="http://uploads.webflow.com/56cf6e77d3b4fc4579d0a954/56cf6e77d3b4fc4579d0a9a9_social-07.svg" width="25"></a>
+                            <a target="_blank" class="social-icon-link w-inline-block" href="https://twitter.com/Shubham71553131"><img src="http://uploads.webflow.com/56cf6e77d3b4fc4579d0a954/56cf6e77d3b4fc4579d0a9bf_social-18.svg" width="25"></a>
+                           
+                        </div>
+                        <!-- <p class="built-with-webflow">Built with <a class="webflow-link" target="_blank" href-disabled="https://webflow.com" href="https://webflow.com">Webflow</a></p> -->
+                        <br />
+                        <footer>&copy; BLOG EXPRESS BY SHUBHAM KUMAR JHA</footer>
+                    </div>
+                </div>
+                @!section('content')
+                <!-- <div class="content-column w-col w-col-9">
+                    <div class="w-dyn-list">
+                        <div class="w-dyn-items">
+                            <div class="w-dyn-item">
+                                <div class="post-wrapper">
+                                    <div class="post-content">
+                                        <div class="w-row">
+                                            <div class="w-col w-col-4 w-col-medium-4">
+                                                <a class="blog-image w-inline-block" href="/posts/cafe-au-lait-turkish-doppio-ristretto" style="background-image: url('https://daks2k3a4ib2z.cloudfront.net/56cf6e77d3b4fc4579d0a95f/56e9f2962682addd4d54350d_photo-1441512673622-3eaa1c39ba28.jpg');"></a>
+                                            </div>
+                                            <div class="w-col w-col-8 w-col-medium-8">
+                                                <a class="blog-title-link w-inline-block" href="/posts/cafe-au-lait-turkish-doppio-ristretto">
+                                                    <h2 class="blog-title">Wherever far wow thus a squirrel raccoon jeez jaguar this from along</h2>
+                                                </a>
+                                                <div class="details-wrapper">
+                                                    <div class="post-info">September 8, 2016</div>
+                                                    <div class="post-info">|</div><a class="post-info when-link" href="/categories/art">Art</a></div>
+                                                <div class="post-summary-wrapper">
+                                                    <p class="post-summary">The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word &quot;and&quot; and the Little
+                                                        Blind
+                                                    </p><a class="read-more-link" href="/posts/cafe-au-lait-turkish-doppio-ristretto">Read more...</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-dyn-item">
+                                <div class="post-wrapper">
+                                    <div class="post-content">
+                                        <div class="w-row">
+                                            <div class="w-col w-col-4 w-col-medium-4">
+                                                <a class="blog-image w-inline-block" href="/posts/half-and-half-variety-milk-viennese-body-cappuccino" style="background-image: url('https://daks2k3a4ib2z.cloudfront.net/56cf6e77d3b4fc4579d0a95f/56e9f0aaf237f02b70597a4e_photo-1416934625760-d56f5e79f6fe.jpg');"></a>
+                                            </div>
+                                            <div class="w-col w-col-8 w-col-medium-8">
+                                                <a class="blog-title-link w-inline-block" href="/posts/half-and-half-variety-milk-viennese-body-cappuccino">
+                                                    <h2 class="blog-title">According a funnily until pre-set or arrogant well cheerful</h2>
+                                                </a>
+                                                <div class="details-wrapper">
+                                                    <div class="post-info">September 8, 2016</div>
+                                                    <div class="post-info">|</div><a class="post-info when-link" href="/categories/music">Music</a></div>
+                                                <div class="post-summary-wrapper">
+                                                    <p class="post-summary">Single shot cultivar beans as chicory caffeine. Medium brewed, milk extra that froth pumpkin spice mocha. Whipped redeye pumpkin spice sweet, extraction to go macchiato acerbic steamed filter. Robusta
+                                                        grounds decaffeinated.</p><a class="read-more-link" href="/posts/half-and-half-variety-milk-viennese-body-cappuccino">Read more...</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-dyn-item">
+                                <div class="post-wrapper">
+                                    <div class="post-content">
+                                        <div class="w-row">
+                                            <div class="w-col w-col-4 w-col-medium-4">
+                                                <a class="blog-image w-inline-block" href="/posts/coffee-sugar-chicory-seasonal-espresso-barista-americano" style="background-image: url('https://daks2k3a4ib2z.cloudfront.net/56cf6e77d3b4fc4579d0a95f/56e9f2b12682addd4d54350f_3f4eb74a.jpg');"></a>
+                                            </div>
+                                            <div class="w-col w-col-8 w-col-medium-8">
+                                                <a class="blog-title-link w-inline-block" href="/posts/coffee-sugar-chicory-seasonal-espresso-barista-americano">
+                                                    <h2 class="blog-title">Coffee sugar, chicory seasonal espresso barista americano</h2>
+                                                </a>
+                                                <div class="details-wrapper">
+                                                    <div class="post-info">September 8, 2016</div>
+                                                    <div class="post-info">|</div><a class="post-info when-link" href="/categories/music">Music</a></div>
+                                                <div class="post-summary-wrapper">
+                                                    <p class="post-summary">Arista, percolator, cream, aromatic, fair trade, breve body instant lungo blue mountain cappuccino. Americano aroma mug espresso latte crema milk redeye acerbic. Galão robusta instant, decaffeinated,
+                                                        so fair trade wings.</p><a class="read-more-link" href="/posts/coffee-sugar-chicory-seasonal-espresso-barista-americano">Read more...</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-dyn-item">
+                                <div class="post-wrapper">
+                                    <div class="post-content">
+                                        <div class="w-row">
+                                            <div class="w-col w-col-4 w-col-medium-4">
+                                                <a class="blog-image w-inline-block" href="/posts/steamed-siphon-froth-mazagran-cafe-au-lait" style="background-image: url('https://daks2k3a4ib2z.cloudfront.net/56cf6e77d3b4fc4579d0a95f/56e9f09af237f02b70597a48_photo-1416949929422-a1d9c8fe84af.jpg');"></a>
+                                            </div>
+                                            <div class="w-col w-col-8 w-col-medium-8">
+                                                <a class="blog-title-link w-inline-block" href="/posts/steamed-siphon-froth-mazagran-cafe-au-lait">
+                                                    <h2 class="blog-title">Overlaid the jeepers uselessly much excluding</h2>
+                                                </a>
+                                                <div class="details-wrapper">
+                                                    <div class="post-info">September 8, 2016</div>
+                                                    <div class="post-info">|</div><a class="post-info when-link" href="/categories/tech">Tech</a></div>
+                                                <div class="post-summary-wrapper">
+                                                    <p class="post-summary">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
+                                                        language ocean. </p><a class="read-more-link" href="/posts/steamed-siphon-froth-mazagran-cafe-au-lait">Read more...</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-dyn-item">
+                                <div class="post-wrapper">
+                                    <div class="post-content">
+                                        <div class="w-row">
+                                            <div class="w-col w-col-4 w-col-medium-4">
+                                                <a class="blog-image w-inline-block" href="/posts/coffee-variety-macchiato-as-organic-ut-variety-caffeine-americano" style="background-image: url('https://daks2k3a4ib2z.cloudfront.net/56cf6e77d3b4fc4579d0a95f/56e9f0e57b8d53d44d934eff_photo-1443304895043-ef30921332c5.jpg');"></a>
+                                            </div>
+                                            <div class="w-col w-col-8 w-col-medium-8">
+                                                <a class="blog-title-link w-inline-block" href="/posts/coffee-variety-macchiato-as-organic-ut-variety-caffeine-americano">
+                                                    <h2 class="blog-title">Coffee variety macchiato, as organic ut variety caffeine americano</h2>
+                                                </a>
+                                                <div class="details-wrapper">
+                                                    <div class="post-info">September 8, 2016</div>
+                                                    <div class="post-info">|</div><a class="post-info when-link" href="/categories/travel">Travel</a></div>
+                                                <div class="post-summary-wrapper">
+                                                    <p class="post-summary">Saucer, crema carajillo, bar, mocha medium, latte cappuccino and espresso acerbic to go. Coffee, irish foam turkish coffee blue mountain seasonal. Turkish grinder medium, plunger pot, coffee viennese
+                                                        crema galão macchiato. </p><a class="read-more-link" href="/posts/coffee-variety-macchiato-as-organic-ut-variety-caffeine-americano">Read more...</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-wrapper"><a class="button w-button" href="/all-posts">More posts&nbsp;→</a></div> -->
+                <div class="sidebar-on-mobile">
+                    <div class="white-wrapper"><img class="circle-profile" sizes="(max-width: 767px) 100vw, (max-width: 991px) 97.296875px, 126px" src="http://uploads.webflow.com/56cf6e77d3b4fc4579d0a954/56e9f064f237f02b70597848_photo-1443180236447-432ea00e6ead.jpg" srcset="http://uploads.webflow.com/56cf6e77d3b4fc4579d0a954/56e9f064f237f02b70597848_photo-1443180236447-432ea00e6ead-p-500x500.jpeg 500w, http://uploads.webflow.com/56cf6e77d3b4fc4579d0a954/56e9f064f237f02b70597848_photo-1443180236447-432ea00e6ead.jpg 700w">
+                        <p class="site-description">BLOG EXPRESS is an all-purpose blogging platform. Create an account to easily add new posts and read various other posts on the website.</p>
+                        <br>
+                        
+                               
+                        </div>
+                        <div class="grey-rule"></div>
+                        <div class="social-link-group">
+                            <a class="social-icon-link w-inline-block" href="https://www.facebook.com/subham.kishan.12"><img src="http://uploads.webflow.com/56cf6e77d3b4fc4579d0a954/56cf6e77d3b4fc4579d0a99b_social-03.svg" width="25"></a>
+                            <a class="social-icon-link w-inline-block" href="https://www.instagram.com/kumarjhashubham0000/"><img src="http://uploads.webflow.com/56cf6e77d3b4fc4579d0a954/56cf6e77d3b4fc4579d0a9a9_social-07.svg" width="25"></a>
+                            <a target="_blank" class="social-icon-link w-inline-block" href="https://twitter.com/Shubham71553131"><img src="http://uploads.webflow.com/56cf6e77d3b4fc4579d0a954/56cf6e77d3b4fc4579d0a9bf_social-18.svg" width="25"></a>
+                           
+                        </div>
+                        <!-- <p class="built-with-webflow">Built with <a class="webflow-link" target="_blank" href-disabled="https://webflow.com" href="https://webflow.com">Webflow</a></p> -->
+                        <br />
+                        <footer>&copy; BLOG EXPRESS BY SHUBHAM KUMAR JHA</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+    <script src="https://daks2k3a4ib2z.cloudfront.net/56cf6e77d3b4fc4579d0a954/js/webflow.5b0765584.js" type="text/javascript"></script>
+    <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+</body>
+
+</html>

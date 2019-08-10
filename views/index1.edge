@@ -1,0 +1,39 @@
+@layout('layouts.moon')
+
+@section('content')
+
+<!-- Page Content -->
+<div class="content-wrapper">
+<div class="content-column w-col w-col-9 ">
+    <div class="w-dyn-list ">
+        <div class="w-dyn-items ">
+            @each(post in posts)
+            <div class="w-dyn-item ">
+                <div class="post-wrapper ">
+                    <div class="post-content ">
+                        <div class="w-row ">
+                            <div class="w-col w-col-4 w-col-medium-4 ">
+                                <!-- <a class="blog image w-inline-block" href="/post/{{ post._id }}" style="background-image: url(
+                                    'https://daks2k3a4ib2z.cloudfront.net/56cf6e77d3b4fc4579d0a95f/56e9f2962682addd4d54350d_photo-1441512673622-3eaa1c39ba28.jpg'); "></a> -->
+                                <a href="/post/{{ post._id }}">
+                                    <img src="https://daks2k3a4ib2z.cloudfront.net/56cf6e77d3b4fc4579d0a95f/56e9f2962682addd4d54350d_photo-1441512673622-3eaa1c39ba28.jpg" style="width:92%; border-radius:3%;">
+                                </a>
+                            </div>
+                            <div class="w-col w-col-8 w-col-medium-8 ">
+                                <a class="blog-title-link w-inline-block" href="/post/{{ post._id }}">
+                                    <h2 class="blog-title"> {{ post.title }} </h2>
+                                </a>
+                                <div class="details-wrapper ">
+                                    <div class="post-info ">by {{ post.username }} on {{ post.createdAt.toDateString() }}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @endeach
+        </div>
+    </div>
+</div>
+</div>
+@endsection

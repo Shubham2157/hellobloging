@@ -1,0 +1,36 @@
+@layout('layouts.moon')
+
+@section('content')
+
+<div class="content-wrapper">
+<div class="content-column w-col w-col-9">
+    <div class="post-wrapper">
+        <div class="post-content">
+            <div class="body-copy w-richtext">
+                <h1>Get in touch</h1>
+                Share your valuable feedback to us..... ! 
+            </div>
+            <br><br>
+            <div class="form-wrapper form">
+                <form data-name="Email Form" id="email-form" name="email-form">
+                    <label for="Name">Name</label>
+                    <input class="text-field w-input" data-name="Name" id="Name" maxlength="256" name="Name" placeholder="Enter your name" type="text">
+                    <label for="Email">Email Address</label>
+                    <input class="text-field w-input" data-name="Email" id="Email" maxlength="256" name="Email" placeholder="Enter your email address" required="required" type="email">
+                    <label for="Message">Message</label>
+                    <textarea class="text-area text-field w-input" data-name="Message" id="Message" maxlength="5000" name="Message" placeholder="Enter your message" required="required"></textarea>
+                    <input class="button button" data-wait="Please wait..." type="submit" value="Submit">
+                </form>
+                <div class="success-message w-form-done">
+                    <p class="success-text">Thank you! Your submission has been received!</p>
+                </div>
+                <div class="w-form-fail">
+                    <p>Oops! Something went wrong while submitting the form</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+@endsection

@@ -21,7 +21,7 @@
     "express-fileupload": "^1.1.4",
     "express-session": "^1.16.0",
     "mongodb": "^3.2.2",
-    "mongoose": "^5.4.20",
+    "mongoose": "^5.7.5",
     "passport": "^0.4.0",
     "startbootstrap-clean-blog": "^5.0.5"
   }

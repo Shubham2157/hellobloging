@@ -98,7 +98,7 @@ const contactPageController = require('./controllers/contact');
 
 const app = new express();
 
-mongoose.connect('mongodb+srv://shubham1:Shubham2157@shubham-uqgnc.mongodb.net/test?retryWrites=true', { useNewUrlParser: true })
+mongoose.connect('link', { useNewUrlParser: true })
     .then(() => 'You are now connected to Mongo!')
     .catch(err => console.error('Something went wrong', err))
 
